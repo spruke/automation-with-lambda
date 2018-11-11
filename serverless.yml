@@ -1,0 +1,10 @@
+service: a-w-l-hello-world-example
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: us-east-1
+
+functions:
+  hello-world-function:
+    handler: hello-world.handler
