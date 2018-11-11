@@ -15,3 +15,7 @@ functions:
     handler: hello-world.handler
   lambda-to-sns-function:
     handler: lambda-to-sns.handler
+  sns-to-lambda-function:
+    handler: sns-to-lambda.handler
+    events:
+      - sns: arn:aws:sns:us-east-1:712800520113:2018-11-11
